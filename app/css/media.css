@@ -1,0 +1,93 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .head-title h1 {
+    font-size: 36px; }
+  .nav-menu li {
+    margin-right: 14px; }
+  .nav-menu li a {
+    width: 138px;
+    height: 138px;
+    font-size: 22px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .head-title img {
+    display: none; }
+  .controls a {
+    opacity: .8; }
+  .nav-menu li {
+    margin-right: 8px; }
+  .nav-menu li a {
+    width: 106px;
+    height: 106px;
+    font-size: 16px; }
+  .holidays a {
+    width: 200px;
+    height: 200px; }
+  .holidays p {
+    margin-top: 75px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .head-contacts {
+    display: none; }
+  .head-title-wrapper {
+    margin-top: 46px; }
+  .head-title h1 {
+    line-height: 70px; }
+  .carousel-wrapper {
+    display: none; }
+  .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10; }
+  .navbar-container {
+    padding: 0; }
+  .nav-menu {
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7d7;
+    position: absolute; }
+  .nav-menu li {
+    float: none;
+    margin-right: 0; }
+  .nav-menu li a {
+    color: #3a3a3a;
+    font-size: 22px;
+    text-shadow: none;
+    width: auto;
+    height: auto;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    text-align: left;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    padding: 16px; }
+  .nav-menu li a:hover {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1); }
+  .nav-menu li .two-string {
+    padding: 16px; }
+  .description-wrapper {
+    padding: 20px 0; }
+  .section-title {
+    display: none; }
+  .holidays a {
+    width: 250px;
+    height: 250px; }
+  .holidays p {
+    margin-top: 105px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .head-contacts p {
+    font-size: 14px; }
+  .head-title h1 {
+    font-size: 28px;
+    line-height: 50px; }
+  .section-p {
+    font-size: 14px; } }

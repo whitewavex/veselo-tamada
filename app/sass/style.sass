@@ -1,0 +1,280 @@
+$roboto: Roboto, Arial, sans-serif
+
+$tatiana: TatianaC
+
+$color: #b11c1d
+
+$gradient: linear-gradient(to right, #fff 0%,#b11c1d 50%,#fff 100%)
+
+/* ANIMATION */
+
+@keyframes spin
+    0%
+        background-color: #fff
+        
+    50%
+        transform: scaleX(0)
+        opacity: 0
+    
+    100%
+        transform: scaleX(1)
+        background-image: none
+        background-color: #c65d5e
+        opacity: 1
+    
+@keyframes spin-back
+    0%
+        transform: scaleX(1)
+        background-image: none
+        background-color: #c65d5e
+        opacity: 1
+    
+    50%
+        transform: scaleX(0)
+        opacity: 0
+    
+    100%
+        background-color: #fff
+
+/* COMMON STYLES */
+
+.section-title
+    font-family: $tatiana
+    font-size: 38px
+    color: #000
+    text-align: center
+    margin-bottom: 30px
+    padding-bottom: 25px
+    border-bottom: 1px solid transparent
+    border-image: linear-gradient(to right, #ffffff 0%,#cdcccc 50%,#ffffff 100%)
+    border-image-slice: 1
+        
+.section-p
+    color: #3a3a3a
+    font-style: italic
+    font-size: 16px
+    margin: 20px
+    line-height: 1.3
+    
+html
+    font-family: $roboto
+    font-size: 16px
+    color: #3a3a3a
+    
+/* HEADER: CONTACTS */
+
+.head-contacts
+    background-color: #f6f6f6
+    padding: 15px 0
+    
+    p, i
+        display: inline-block
+        margin-left: 20px
+        line-height: 15px
+        
+    i
+        font-size: 26px
+        color: $color
+        margin-left: 0
+        
+/* HEADER: TITLE */
+
+.head-title-wrapper
+    border-top: 1px solid #d7d7d7
+    border-bottom: 1px solid #d7d7d7
+    
+.head-title
+    position: relative
+    
+    img
+        position: absolute
+        top: -70px
+        left: -90px
+        
+    h1
+        font-family: $tatiana
+        font-size: 42px
+        color: $color
+        text-align: center
+        line-height: 130px
+        
+/* HEADER: CAROUSEL */
+
+.carousel-wrapper
+    padding: 20px 0
+    background-color: #f6f6f6
+    border-bottom: 1px solid #d7d7d7
+
+#carousel-container
+    position: relative
+    width: 100%
+    max-height: 600px
+    overflow: hidden
+    border-radius: 50px
+    
+#carousel-container:hover .controls>a
+    opacity: .8
+    transition-duration: 0.3s
+     
+.carousel
+    position: relative
+    height: 100%
+    
+    li
+        float: left
+        height: 100%
+        
+.controls
+    font-size: 30px
+    
+    a
+        position: absolute
+        display: block
+        width: 60px
+        height: 60px
+        background-color: $color
+        border: none
+        border-radius: 50%
+        top: 50%
+        margin-top: -30px
+        opacity: 0
+        transition-duration: 0.3s
+        
+        i
+            color: #fff
+            
+.prevSlide
+    left: 20px
+    
+    i
+        margin: 16px
+
+.nextSlide
+    right: 20px
+
+    i
+         margin: 16px 20px
+        
+/* HEADER: NAVBAR */
+
+.navbar-wrapper
+    padding: 10px 0
+    
+.navbar-header
+    background-color: #fff
+    border-bottom: 1px solid #d2d2d2
+    
+    button
+        margin: 0
+    
+    i
+        font-size: 26px
+        color: #3a3a3a
+    
+.nav-menu
+    font-family: $tatiana
+    padding: 0
+    width: 100%
+    z-index: 999
+    
+    li:last-of-type
+        margin-right: 0
+    
+    li
+        margin-right: 28px
+        
+        a
+            display: block
+            color: #fff
+            font-size: 26px
+            text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.2)
+            width: 160px
+            height: 160px
+            border-radius: 50%
+            text-align: center
+            background: linear-gradient(to bottom, #ffffff 0%,#b11c1d 50%,#ffffff 100%)
+            box-shadow: 25px 25px 32px 0px rgba(0, 0, 0, 0.15)
+            border: 1px solid rgba(178, 178, 178, .5)
+            padding-top: 41%
+            transform: scale(1)
+            transition-duration: 0.3s
+            
+        a:hover
+            transform: scale(1.2)
+            transition-duration: 0.3s
+        
+        a:active
+            background: linear-gradient(to bottom, #ffffff 0%,#b11c1d 50%,#ffffff 100%)
+            box-shadow: none
+            transform: scale(1.1)
+            
+        .two-string
+            padding-top: 34%
+            
+/* MAIN: DESCRIPTION */
+
+.description-wrapper
+    padding: 80px 0 60px
+        
+/* MAIN: HOLIDAYS */
+
+.holidays-wrapper
+    padding: 50px 0 0
+    background: $gradient
+    
+.holidays
+    
+    a
+        display: block
+        position: relative
+        z-index: 9
+        width: 250px
+        height: 250px
+        background-color: #fff
+        border: 5px solid #fff
+        border-radius: 50%
+        margin: 0 auto
+        background-repeat: no-repeat
+        animation-name: spin-back
+        animation-duration: 0.8s
+        animation-fill-mode: forwards
+        
+    a:hover, a:hover p
+        text-decoration: none
+        animation-name: spin
+        animation-duration: 0.8s
+        animation-fill-mode: forwards
+    
+    p
+        font-family: Arial, $roboto, sans-serif
+        font-size: 36px
+        font-style: italic
+        color: #fff
+        text-align: center
+        margin-top: 105px
+        opacity: 0
+        border-radius: 50%
+        animation-name: spin-back
+        animation-duration: 0.8s
+        animation-fill-mode: forwards
+    
+    h4
+        font-family: Arial, Roboto, sans-serif
+        font-size: 22px
+        font-style: italic
+        color: #fff
+        text-align: center
+        margin-top: 30px
+        margin-bottom: 50px
+    
+.weddings
+    background-image: url(../img/holidays-1.jpg)
+    
+.corporate
+    background-image: url(../img/holidays-2.jpg)
+    
+.birthday
+    background-image: url(../img/holidays-3.jpg)
+    
+.class
+    height: 200px
