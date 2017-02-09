@@ -1,5 +1,5 @@
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1199px) {
     .head-title h1 {
         font-size: 36px;
     }
@@ -12,6 +12,18 @@
         width: 138px;
         height: 138px;
         font-size: 22px;
+    }
+    
+    .advantage-wrapper {
+        padding: 120px 0;
+    }
+    
+    .advantage {
+        min-height: 385px;
+    }
+    
+    .widget {
+        width: 100%;
     }
 }
     
@@ -42,6 +54,18 @@
     
     .holidays p {
         margin-top: 75px;
+    }
+    
+    .advantage {
+        min-height: auto;
+    }
+    
+    .reviews img {
+        display: none;
+    }
+    
+    .review {
+        padding-left: 90px;
     }
 }
     
@@ -126,6 +150,27 @@
         margin-top: 105px;
     }
     
+    .review {
+        padding: 0 10px;
+        height: 246px;
+    }
+    
+    .reviews h4 {
+        text-align: center;
+    }
+    
+    .reviews-control a {
+        padding: 246px 0 0;
+        background-color: transparent;
+    }
+    
+    .reviews-control .prevReview {
+        left: 40%;
+    }
+    
+    .reviews-control .nextReview {
+        right: 40%;
+    }
 }
     
 /* Extra Small Devices, Phones */
@@ -139,7 +184,23 @@
         line-height: 50px;
     }
     
-    .section-p {
+    .section-p, .advantage p, .footer-wrapper p {
         font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .advantage h3 {
+        font-size: 24px;
+    }
+    
+    .reviews-wrapper {
+        display: none;
+    }
+    
+    .footer-wrapper p span {
+        margin-left: 29px;
     }
 }
