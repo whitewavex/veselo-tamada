@@ -37,7 +37,9 @@
   .reviews img {
     display: none; }
   .review {
-    padding-left: 90px; } }
+    padding-left: 90px; }
+  .p1 {
+    margin-top: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
@@ -104,7 +106,14 @@
   .reviews-control .prevReview {
     left: 40%; }
   .reviews-control .nextReview {
-    right: 40%; } }
+    right: 40%; }
+  .footer-wrapper {
+    text-align: center; }
+  .cover-about {
+    display: none; }
+  .person img {
+    width: 70%;
+    margin-bottom: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -113,7 +122,7 @@
   .head-title h1 {
     font-size: 28px;
     line-height: 50px; }
-  .section-p, .advantage p, .footer-wrapper p {
+  .section-p, .advantage p, .person-info p {
     font-size: 14px; }
   .section-title {
     font-size: 28px; }
@@ -122,4 +131,10 @@
   .reviews-wrapper {
     display: none; }
   .footer-wrapper p span {
-    margin-left: 29px; } }
+    margin-left: 29px; }
+  .person-info {
+    padding: 15px; }
+  .person img {
+    width: 100%; }
+  .person-info h4 {
+    font-size: 20px; } }

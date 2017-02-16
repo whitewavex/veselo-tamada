@@ -67,6 +67,10 @@
     .review {
         padding-left: 90px;
     }
+    
+    .p1 {
+        margin-top: 0;
+    }
 }
     
 /* Small Devices, Tablets */
@@ -171,6 +175,19 @@
     .reviews-control .nextReview {
         right: 40%;
     }
+    
+    .footer-wrapper {
+        text-align: center;
+    }
+    
+    .cover-about {
+        display: none;
+    }
+    
+    .person img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
 }
     
 /* Extra Small Devices, Phones */
@@ -184,7 +201,7 @@
         line-height: 50px;
     }
     
-    .section-p, .advantage p, .footer-wrapper p {
+    .section-p, .advantage p, .person-info p {
         font-size: 14px;
     }
     
@@ -202,5 +219,17 @@
     
     .footer-wrapper p span {
         margin-left: 29px;
+    }
+    
+    .person-info {
+        padding: 15px;
+    }
+    
+    .person img {
+        width: 100%;
+    }
+    
+    .person-info h4 {
+        font-size: 20px;
     }
 }

@@ -49,6 +49,9 @@ $gradient: linear-gradient(to right, #fff 0%,#b11c1d 50%,#fff 100%)
 
 /* COMMON STYLES */
 
+strong
+    font-weight: bold
+
 .visible-block
     display: block !important
 
@@ -95,7 +98,7 @@ html
 
 .head-title-wrapper
     border-top: 1px solid #d7d7d7
-    border-bottom: 1px solid #d7d7d7
+    background-color: #fff
     
 .head-title
     position: relative
@@ -118,6 +121,7 @@ html
     padding: 20px 0
     background-color: #f6f6f6
     border-bottom: 1px solid #d7d7d7
+    border-top: 1px solid #d7d7d7
 
 #carousel-container
     position: relative
@@ -172,7 +176,8 @@ html
 /* HEADER: NAVBAR */
 
 .navbar-wrapper
-    padding: 10px 0
+    padding: 20px 0
+    background-color: #fff
     
 .navbar-header
     background-color: #fff
@@ -419,3 +424,66 @@ html
 .widget
     width: 83%
     box-shadow: 13px 21px 30px 0px rgba(0, 0, 0, 0.15)
+    
+/* ABOUT: BACKGROUND */
+
+.cover-about
+    
+    img
+        width: 100%
+        border-top: 1px solid #6d6b6b
+        border-bottom: 1px solid #6d6b6b
+        
+/* ABOUT: PERSON */
+
+.person-wrapper
+    box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.33)
+    margin-bottom: 50px
+    
+.person
+    padding: 80px 0
+    
+    img
+        width: 100%
+        
+.person:first-of-type
+    border-bottom: 1px solid transparent
+    border-image: linear-gradient(to right, #ffffff 0%,#cdcccc 50%,#ffffff 100%)
+    border-image-slice: 1
+    
+.person-img-1
+    margin-left: -20px
+    text-align: center
+    
+.person-img-2
+    text-align: center
+    
+    img
+        border: 2px solid rgba(72, 72, 72, .4)
+        box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.35)
+
+.person-info
+    box-shadow: 1px 1px 21px 0px rgba(0, 0, 0, 0.35)
+    padding: 30px 40px 23px
+    
+    h4
+        font-family: $tatiana
+        font-size: 24px
+        padding-bottom: 20px
+        margin-bottom: 20px
+        border-bottom: 1px solid #a2a2a2
+        text-align: center
+        
+    p
+        line-height: 1.3
+        color: #484848
+        margin-bottom: 20px
+        
+    p:last-of-type
+        margin-bottom: 0
+    
+.p1
+    margin-top: 25%
+    
+.line
+    
