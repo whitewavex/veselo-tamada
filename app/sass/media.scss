@@ -207,7 +207,7 @@
         line-height: 50px;
     }
     
-    .section-p, .advantage p, .person-info p {
+    .section-p, .advantage p, .person-info p, .accordeon-content p {
         font-size: 14px;
     }
     
@@ -245,5 +245,17 @@
     
     .works {
         width: 100%;
+    }
+    
+    .set a, .accordeon-content, .add-name, .add-service {
+        padding: 20px;
+    }
+    
+    .set a p {
+        display: none;
+    }
+    
+    .set a h3 {
+        font-size: 18px;
     }
 }

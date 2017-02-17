@@ -126,7 +126,7 @@
   .head-title h1 {
     font-size: 28px;
     line-height: 50px; }
-  .section-p, .advantage p, .person-info p {
+  .section-p, .advantage p, .person-info p, .accordeon-content p {
     font-size: 14px; }
   .section-title {
     font-size: 28px; }
@@ -145,4 +145,10 @@
   .band-center {
     display: none; }
   .works {
-    width: 100%; } }
+    width: 100%; }
+  .set a, .accordeon-content, .add-name, .add-service {
+    padding: 20px; }
+  .set a p {
+    display: none; }
+  .set a h3 {
+    font-size: 18px; } }
