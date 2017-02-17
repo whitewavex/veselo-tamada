@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Портфолио</title>
+    <title>Контакты</title>
     
     <!-- build:css css/vendor.min.css -->
     <link rel="stylesheet" href="libs/bootstrap.min.css">
@@ -48,7 +48,7 @@
            </div>
        </div>
        <div class="cover">
-            <img src="img/portfolio-bg.jpg" alt="">
+            <img src="img/contacts-bg.jpg" alt="">
        </div>
        <div class="navbar-wrapper">
            <div class="container navbar-container">
@@ -73,64 +73,36 @@
    <main>
       <div class="description-wrapper">
           <div class="container">
-              <h2 class="section-title">Наши работы</h2>
+              <h2 class="section-title">Наши контакты</h2>
+              <p class="section-p">Вы можете связаться с нами любым удобным для Вас способом. Звоните нам и мы устроим Вам праздник!</p>
               <div class="row">
-                  <div class="col-sm-4 center">
-                      <a href="#" class="works">
-                          <img src="img/weddings.jpg" alt="">
-                          <h3>Свадьбы</h3>
-                      </a>
+                  <div class="col-sm-6">
+                      <form action="">
+                          <input id="name" type="text" placeholder="Ваше имя">
+                          <input type="email" placeholder="Ваш e-mail">
+                          <textarea name="form" id="form" cols="30" rows="14" placeholder="Текст сообщения"></textarea>
+                          <input type="submit">
+                      </form>
                   </div>
-                  <div class="col-sm-4 center">
-                      <a href="#" class="works">
-                          <img src="img/corporate.jpg" alt="">
-                          <h3>Корпоративы</h3>
-                      </a>
-                  </div>
-                  <div class="col-sm-4 center">
-                      <a href="#" class="works">
-                          <img src="img/birthday.jpg" alt="">
-                          <h3>Юбилеи</h3>
-                      </a>
+                  <div class="col-sm-6">
+                      <div class="contacts">
+                          <div class="phone">
+                              <i class="fa fa-phone"></i>
+                              <p>(063) 650-12-24 &nbsp;/ &nbsp;(095) 741-00-45</p>
+                          </div>
+                          <div class="mail">
+                              <i class="fa fa-envelope-o"></i>
+                              <a href="mailto:veselo-tamade@ukr.net">veselo-tamade@ukr.net</a>
+                          </div>
+                          <div class="vk">
+                              <i class="fa fa-vk"></i>
+                              <a href="https://vk.com/veselo_tamada" target="_blank">vk.com/veselo_tamada</a>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>
       </div>
-      <div class="band band-center"></div>
-      <div class="reviews-wrapper">
-           <div class="container">
-               <h2 class="section-title visible-block">Отзывы клиентов</h2>
-               <div id="reviews-container">
-                   <ul class="reviews">
-                       <li>
-                           <img src="img/review-1.jpg" alt="">
-                           <div class="review">
-                               <h4>Алексей и Анастасия</h4>
-                               <p>Текст отзыва и т.д. текст отзыва и т.д. текст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыва.</p>
-                           </div>
-                       </li>
-                       <li>
-                           <img src="img/review-2.jpg" alt="">
-                           <div class="review">
-                               <h4>Сергей и Наталия</h4>
-                               <p>Текст отзыва и т.д. текст отзыва и т.д. текст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыва.</p>
-                           </div>
-                       </li>
-                       <li>
-                           <img src="img/review-1.jpg" alt="">
-                           <div class="review">
-                               <h4>Алексей и Анастасия</h4>
-                               <p>Текст отзыва и т.д. текст отзыва и т.д. текст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыватекст отзыва.</p>
-                           </div>
-                       </li>
-                   </ul>
-                   <div class="reviews-control">
-                       <a class="prevReview"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                       <a class="nextReview"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                   </div>
-               </div>
-           </div>
-       </div>
    </main>
    <footer>
        <div class="band"></div>
@@ -171,7 +143,7 @@
     <!-- endbuild -->
     
     <!-- build:js js/main.min.js -->
-    <script src="js/reviews.js"></script>
+    
     <!-- endbuild -->
     
 </body>

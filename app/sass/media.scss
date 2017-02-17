@@ -71,6 +71,10 @@
     .p1 {
         margin-top: 0;
     }
+    
+    form textarea {
+        width: 320px;
+    }
 }
     
 /* Small Devices, Tablets */
@@ -194,6 +198,19 @@
         margin-left: auto;
         margin-right: auto;
     }
+    
+    form textarea, form input {
+        width: 90%;
+    }
+    
+    form {
+        text-align: center;
+    }
+    
+    .contacts {
+        width: 350px;
+        margin: 40px auto 0;
+    }
 }
     
 /* Extra Small Devices, Phones */
@@ -257,5 +274,13 @@
     
     .set a h3 {
         font-size: 18px;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    .contacts {
+        display: none;
     }
 }
