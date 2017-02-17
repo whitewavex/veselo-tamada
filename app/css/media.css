@@ -109,11 +109,15 @@
     right: 40%; }
   .footer-wrapper {
     text-align: center; }
-  .cover-about {
+  .cover {
     display: none; }
   .person img {
     width: 70%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .works {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -137,4 +141,8 @@
   .person img {
     width: 100%; }
   .person-info h4 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .band-center {
+    display: none; }
+  .works {
+    width: 100%; } }

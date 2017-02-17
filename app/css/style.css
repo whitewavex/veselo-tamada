@@ -76,6 +76,9 @@
 strong {
   font-weight: bold; }
 
+.center {
+  text-align: center; }
+
 .visible-block {
   display: block !important; }
 
@@ -449,7 +452,7 @@ html {
           box-shadow: 13px 21px 30px 0px rgba(0, 0, 0, 0.15); }
 
 /* ABOUT: BACKGROUND */
-.cover-about img {
+.cover img {
   width: 100%;
   border-top: 1px solid #6d6b6b;
   border-bottom: 1px solid #6d6b6b; }
@@ -504,3 +507,37 @@ html {
 
 .p1 {
   margin-top: 25%; }
+
+/* PORTFOLIO: WORKS */
+.works {
+  display: block;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  margin: 40px 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+  .works img {
+    width: 100%; }
+  .works h3 {
+    font-style: italic;
+    font-size: 20px;
+    color: #7d7d7d;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s; }
+
+.works:hover {
+  background-color: rgba(177, 28, 29, 0.15);
+  text-decoration: none; }
+
+.works:hover h3 {
+  color: #484848;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+
+.band-center {
+  -webkit-box-shadow: none;
+          box-shadow: none; }

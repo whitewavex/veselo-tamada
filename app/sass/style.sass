@@ -51,6 +51,9 @@ $gradient: linear-gradient(to right, #fff 0%,#b11c1d 50%,#fff 100%)
 
 strong
     font-weight: bold
+    
+.center
+    text-align: center
 
 .visible-block
     display: block !important
@@ -427,7 +430,7 @@ html
     
 /* ABOUT: BACKGROUND */
 
-.cover-about
+.cover
     
     img
         width: 100%
@@ -485,5 +488,34 @@ html
 .p1
     margin-top: 25%
     
-.line
+/* PORTFOLIO: WORKS */
+
+.works
+    display: block
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3)
+    padding: 5px
+    margin: 40px 0
+    transition-duration: 0.3s
     
+    img
+        width: 100%
+    
+    h3
+        font-style: italic
+        font-size: 20px
+        color: #7d7d7d
+        margin-top: 20px
+        margin-bottom: 15px
+        transition-duration: 0.3s
+        
+.works:hover
+    background-color: rgba(177, 28, 29, .15)
+    text-decoration: none
+    
+    
+.works:hover h3
+    color: #484848
+    transform: scale(1.1)
+    
+.band-center
+    box-shadow: none
