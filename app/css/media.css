@@ -41,7 +41,9 @@
   .p1 {
     margin-top: 0; }
   form textarea {
-    width: 320px; } }
+    width: 320px; }
+  .advice {
+    margin-bottom: 40px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
@@ -126,7 +128,12 @@
     text-align: center; }
   .contacts {
     width: 350px;
-    margin: 40px auto 0; } }
+    margin: 40px auto 0; }
+  .advice img {
+    max-width: 90%; }
+  .advice h3 {
+    position: relative;
+    top: -10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

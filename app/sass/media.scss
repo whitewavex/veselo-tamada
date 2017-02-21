@@ -75,6 +75,10 @@
     form textarea {
         width: 320px;
     }
+    
+    .advice {
+        margin-bottom: 40px;
+    }
 }
     
 /* Small Devices, Tablets */
@@ -210,6 +214,15 @@
     .contacts {
         width: 350px;
         margin: 40px auto 0;
+    }
+    
+    .advice img {
+        max-width: 90%;
+    }
+    
+    .advice h3 {
+        position: relative;
+        top: -10px;
     }
 }
     

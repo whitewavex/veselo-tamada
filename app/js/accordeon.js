@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('.set>a').click(function(){
+    $('.set>a').click(function(event){
+        event.preventDefault();
         if( $(this).hasClass('active') ){
             $(this).removeClass('active');
             $(this).siblings('.accordeon-content').slideUp(200);
