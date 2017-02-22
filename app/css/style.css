@@ -716,3 +716,31 @@ form input[type=submit]:active {
 .advice:hover img {
   -webkit-filter: none;
           filter: none; }
+
+/* FILTER GRAYSCALE FOR IE */
+.img-bg {
+  width: 96%;
+  height: 240px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s; }
+
+.married {
+  background-image: url(../img/just-married.jpg); }
+
+.married-color {
+  background-image: url(../img/just-married-color.jpg); }
+
+.glasses {
+  background-image: url(../img/glasses.jpg); }
+
+.glasses-color {
+  background-image: url(../img/glasses-color.jpg); }
+
+.happy {
+  background-image: url(../img/happy-birthday.jpg); }
+
+.happy-color {
+  background-image: url(../img/happy-birthday-color.jpg); }
