@@ -1,19 +1,20 @@
 $(document).ready(function(){
     
-    $('.slideFotos').click(function(event){
+    $('.works').click(function(event){
         event.preventDefault();
-        $('.gallery-wrapper').fadeIn('slow');
-        slideFotos();
+        var target = '.' + $(this).data('target');
+        $(target).fadeIn('slow');
+        slideFotos(target);
     });
     
-    function slideFotos(){
-    
+    function slideFotos(target){
+        var wrap = $(target);
         var position = 0;
-        var slideWidth = $('#galleryContainer').width();
-        var slides = $('.slide');
+        var slideWidth = wrap.find('.galleryContainer').width();
+        var slides = wrap.find('.slide');
         var number = slides.length;
 
-        $('#galleryContainer').css({
+        wrap.find('.galleryContainer').css({
            'overflow': 'hidden' 
         });
         slides.wrapAll('<div id="galleryInner"></div>').css({
@@ -23,28 +24,34 @@ $(document).ready(function(){
         $('#galleryInner').css({
            'width': slideWidth * number 
         });
-        $('#gallery').prepend('<span class="gallery-control" id="prevFoto"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>');
-        $('#gallery').prepend('<span class="gallery-control" id="nextFoto"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>');
-        $('#gallery').prepend('<span class="gallery-control" id="closeFoto"><i class="fa fa-times" aria-hidden="true"></i></span>')
+        wrap.find('.gallery').prepend('<span class="gallery-control" id="prevFoto"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>');
+        wrap.find('.gallery').prepend('<span class="gallery-control" id="nextFoto"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>');
+        wrap.find('.gallery').prepend('<span class="gallery-control" id="closeFoto"><i class="fa fa-times" aria-hidden="true"></i></span>')
 
         manageControl( position );
 
-        $('.gallery-control').on('click', function(){
+        wrap.find('.gallery-control').on('click', function(){
             if( $(this).attr('id')=='nextFoto'){
                 position = position + 1;
+                manageControl( position );
+                $('#galleryInner').css({
+                   'margin-left': slideWidth * (-position) 
+                });
             }
             else if( $(this).attr('id')=='prevFoto'){
                 position = position - 1;
+                manageControl( position );
+                $('#galleryInner').css({
+                   'margin-left': slideWidth * (-position) 
+                });
             }
             else {
-                $('.gallery-wrapper').fadeOut('slow');
-                position = 0;
-                $('.gallery-control').remove();
+                wrap.fadeOut('slow', function(){
+                    position = 0;
+                    $('.gallery-control').remove();
+                    slides.unwrap();
+                });
             }
-            manageControl( position );
-            $('#galleryInner').css({
-               'margin-left': slideWidth * (-position) 
-            });
         });
 
         function manageControl( position ){
