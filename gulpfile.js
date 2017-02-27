@@ -4,7 +4,7 @@ var clean = require('gulp-dest-clean');
 var imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
-var useref = require('gulp-useref');
+var useref = require('gulp-useref-plus');
 var gulpif = require('gulp-if');
 var css = require('gulp-csso');
 var js = require('gulp-uglify');
@@ -54,7 +54,6 @@ gulp.task('default', ['start', 'watch']);
 gulp.task('build', ['images', 'fonts'], function() {
     gulp.src('app/*.html')
         .pipe(useref())
-        .pipe(gulpif("*.css", css()))
         .pipe(gulpif("*.js", js()))
         .pipe(gulp.dest('build'))
 });

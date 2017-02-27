@@ -21,6 +21,7 @@
     "gulp-server-livereload": "^1.9.2",
     "gulp-uglify": "^2.0.1",
     "gulp-useref": "^3.1.2",
+    "gulp-useref-plus": "0.0.8",
     "jquery": "^3.1.1"
   }
 }

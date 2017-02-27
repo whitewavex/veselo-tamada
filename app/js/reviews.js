@@ -25,4 +25,4 @@ $(document).ready(function(){
     
     $('.nextReview').click( nextReview );
     $('.prevReview').click( prevReview );
-})
+});

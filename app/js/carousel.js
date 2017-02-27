@@ -34,4 +34,4 @@ $(document).ready(function(){
 
     var interval = setInterval( next, auto );
 
-})
+});
