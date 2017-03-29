@@ -520,6 +520,13 @@ html
 .band-center
     box-shadow: none
     
+.video
+    margin-top: 40px
+    margin-bottom: 40px
+    
+    iframe
+        max-width: 100%
+    
 /* SERVICE: ACCORDEON */
 
 .accordeon-container
@@ -796,3 +803,86 @@ form
     
 #closeFoto
     top: 3%
+    
+/* REVIEWS */
+
+.reviews-section
+    margin-bottom: 50px
+
+.reviews-section form
+    margin: 0 auto
+    width: 54%
+    
+.reviews-section form>span
+    margin-right: 15px
+    line-height: 30px
+    float: left
+
+.reviews-section input
+    display: inline-block
+    width: 49%
+    
+.reviews-section textarea
+    display: block
+    width: 99%
+    
+.file-upload
+    position: relative
+    overflow: hidden
+    width: 180px
+    height: 33px
+    padding: 9px 30px
+    text-align: center
+    font-size: 15px
+    color: #fff
+    background-color: rgba(177, 28, 29, 0.9)
+    border-radius: 2px
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.33)
+    
+    input[type=file]
+        display: none
+        
+    label
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        cursor: pointer
+        
+    span
+        line-height: 33px
+        
+.file-upload:hover
+    background-color: rgba(177, 28, 29, 0.7)
+    
+.file-upload:active
+    background-color: #b11c1d
+    box-shadow: none
+    
+.review-foto
+    float: left
+    width: 16%
+    margin: 20px 60px 0 20px
+    text-align: center
+    
+    img
+        width: 100%
+    
+    h3
+        font-size: 16px
+        line-height: 1.4
+        margin: 20px 0
+        font-style: italic
+        color: #b11c1d
+        
+.review-foto ~ p
+    font-size: 15px
+    
+.reviews-line
+    margin: 30px 0
+    border-bottom: 1px solid transparent
+    border-image: linear-gradient(to right, #ffffff 0%,#cdcccc 50%,#ffffff 100%)
+    border-image-slice: 1
+        

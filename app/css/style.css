@@ -542,6 +542,12 @@ html {
   -webkit-box-shadow: none;
           box-shadow: none; }
 
+.video {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .video iframe {
+    max-width: 100%; }
+
 /* SERVICE: ACCORDEON */
 .accordeon-container {
   position: relative;
@@ -806,3 +812,85 @@ form input[type=submit]:active {
 
 #closeFoto {
   top: 3%; }
+
+/* REVIEWS */
+.reviews-section {
+  margin-bottom: 50px; }
+
+.reviews-section form {
+  margin: 0 auto;
+  width: 54%; }
+
+.reviews-section form > span {
+  margin-right: 15px;
+  line-height: 30px;
+  float: left; }
+
+.reviews-section input {
+  display: inline-block;
+  width: 49%; }
+
+.reviews-section textarea {
+  display: block;
+  width: 99%; }
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  width: 180px;
+  height: 33px;
+  padding: 9px 30px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(177, 28, 29, 0.9);
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.33);
+          box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.33); }
+  .file-upload input[type=file] {
+    display: none; }
+  .file-upload label {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; }
+  .file-upload span {
+    line-height: 33px; }
+
+.file-upload:hover {
+  background-color: rgba(177, 28, 29, 0.7); }
+
+.file-upload:active {
+  background-color: #b11c1d;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.review-foto {
+  float: left;
+  width: 16%;
+  margin: 20px 60px 0 20px;
+  text-align: center; }
+  .review-foto img {
+    width: 100%; }
+  .review-foto h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 20px 0;
+    font-style: italic;
+    color: #b11c1d; }
+
+.review-foto ~ p {
+  font-size: 15px; }
+
+.reviews-line {
+  margin: 30px 0;
+  border-bottom: 1px solid transparent;
+  -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(50%, #cdcccc), to(#ffffff));
+  -webkit-border-image: -webkit-linear-gradient(left, #ffffff 0%, #cdcccc 50%, #ffffff 100%);
+          border-image: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(50%, #cdcccc), to(#ffffff));
+          border-image: linear-gradient(to right, #ffffff 0%, #cdcccc 50%, #ffffff 100%);
+  border-image-slice: 1; }

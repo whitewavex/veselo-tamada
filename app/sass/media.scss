@@ -79,6 +79,14 @@
     .advice {
         margin-bottom: 40px;
     }
+    
+    .reviews-section form {
+        width: 100%;
+    }
+    
+    .reviews-section input {
+        width: 99%;
+    }
 }
     
 /* Small Devices, Tablets */
@@ -299,6 +307,15 @@
     
     .contacts {
         display: none;
+    }
+    
+    .review-foto {
+        float: none;
+        width: 90%;
+    }
+    
+    .review-foto ~ p {
+        font-size: 14px;
     }
 }
 
